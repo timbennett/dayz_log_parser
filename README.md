@@ -50,3 +50,5 @@ Please let me know if you find this useful or would like to extract other intell
 * Graphs, webservice, etc (volunteers wanted!):
 
 ![Concept graph output](graph_concept.png)
+
+**Acknowledgements:** Regex code from [C222/DayZ-Obituaries](https://github.com/C222/DayZ-Obituaries/)
