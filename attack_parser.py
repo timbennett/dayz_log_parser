@@ -8,6 +8,7 @@ import csv
 #import gzip # use gzip if you're reading a zipped log file
 
 # Search patterns
+# courtesy of https://github.com/C222/DayZ-Obituaries/blob/master/regex_parse.py
 kill =       '((?:(?:[0-1][0-9])|(?:[2][0-3])|(?:[0-9])):(?:[0-5][0-9])(?::[0-5][0-9])?(?:\\s?(?:am|AM|pm|PM))?).*?Player.*?(".*?").*?id=(\\d+).*?has been killed by.*?player.*?(".*?").*?id=(\\d+)'
 day =        'AdminLog started on ((?:(?:[1]{1}\\d{1}\\d{1}\\d{1})|(?:[2]{1}\\d{3}))[-:\\/.](?:[0]?[1-9]|[1][012])[-:\\/.](?:(?:[0-2]?\\d{1})|(?:[3][01]{1})))(?![\\d]) at ((?:(?:[0-1][0-9])|(?:[2][0-3])|(?:[0-9])):(?:[0-5][0-9])(?::[0-5][0-9])?(?:\\s?(?:am|AM|pm|PM))?)'
 injury =     '((?:(?:[0-1][0-9])|(?:[2][0-3])|(?:[0-9])):(?:[0-5][0-9])(?::[0-5][0-9])?(?:\\s?(?:am|AM|pm|PM))?).*?"(.*?)\\(uid=(\\d+)\\).*?(SHOT|HIT) (.*?)\\(uid=(\\d+)\\) by (.*?) into (.*?)\\."'
