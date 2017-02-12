@@ -152,7 +152,7 @@ for line_number, line in enumerate(lines):
 injuries_df = pd.DataFrame(injury_output, columns=['Timestamp','Attacker','Attacker_ID','Attack_Type','Victim','Victim_ID','Weapon','Body_Part'])
 injuries_df = injuries_df.drop_duplicates() # log files contain frequent multiple entries for a single high-damage attack; this condenses them into one attack
 injuries_df[['Attacker_ID','Victim_ID']].apply(str) # this is meant to help when opening output CSVs in Excel... but it still treats quoted numeric strings as numbers :(
-print(injuries_df.dtypes)
+
 kills_df = pd.DataFrame(kill_output, columns=['Timestamp','Killer','Killer_ID','Victim','Victim_ID','Kill type','Elapsed time'])
 
 injuries_df.to_csv("injuries_{}.csv".format(sys.argv[1]),index=False, quoting=csv.QUOTE_NONNUMERIC)
