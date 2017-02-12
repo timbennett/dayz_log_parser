@@ -40,7 +40,7 @@ I also de-duplicate multiple references to the same injury. DayZ seems to log hi
 
 Please let me know if you find this useful or would like to extract other intelligence from your server log files.
 
-** Goals: **
+**Goals: **
 
 * Fine-tune blood loss death detection.
 * Add support for crediting all involved parties on a kill, or for crediting kill assists.
